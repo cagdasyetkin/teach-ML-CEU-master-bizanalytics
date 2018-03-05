@@ -1,0 +1,9 @@
+---
+title: "notes"
+author: "Cagdas"
+date: "5 March 2018"
+output: html_document
+---
+
+for a full score you need to know the formulas :)
+
