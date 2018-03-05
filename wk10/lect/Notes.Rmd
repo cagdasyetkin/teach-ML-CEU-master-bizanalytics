@@ -6,4 +6,78 @@ output: html_document
 ---
 
 for a full score you need to know the formulas :)
+what happened on ML1:
+
+Data Mining Process, Vizz, Explore, Trees, Linear Regression, Lasso, Ridge, Train and Test, Cross Validation, Goodness of Fit, Error, RMSE, PCA, Clustering - kmeans 
+Labeled Supervised, Unlabeled Unsupervised.
+
+Bias and Variance. Complexity control. Nearest Neighbour.
+
+###Tree Based Methods 9.2 page 305 - 310
+spliting point minimizing the RMSE.
+growing the tree and then pruning it, discussed. complexity and overfitting. 
+
+
+starts with regression tree
+impurity of the node: RMSE and divide o the number of observation on that node. obviously we are doing errors in a node, we have only one prediction number.
+
+we will collapse from the splitting points where it has minimum impact on the complexity formula. how do we find that alpha is similar to lasso. a kind of pnishment for the complexity. alpha times number of nodes. T is nodes. alpha gives the best threshold between bias and complexity. control complexity and bias. Minimizing the curve, finding the right alpha. which alpha to use will be decided using cross validation.
+
+then classification tree...
+the proportion. 
+misclassification error: its a proportion.
+gini and cross entrophy. different measures for impurity.
+
+difficuties with trees: u can allow your tree to grow too big. u can push the error to zero. low bias. but high variance. a small change can yield a different tree. it is not smooth. steps are big. difficulty in capturing additive structure. it means.. house example. 
+
+
+bagging = bootstrap aggregation. 
+subsampling. 100 datapoint, samples by replacement. create groups of 50. train train train. making of different datasets. repeat this 10 000 times and you will have many trainings. gives you more training data then the original dataset.
+
+making of lots of models. run all of them and take average of the predictions. the doctor giving medicine example. use many doctors.
+
+we are using these many models on a new data which they didnt see before. we are averaging those results!
+
+###Random Forest
+bootstrap > grow trees recursively. uncorrelated.
+p is average pearwise corr between the trees. it is 1 number.
+
+variable importance. the most important is the one which is reducing the error the most.
+proximity plot for the observations ended up in the same node :))
+
+use cross validation to find the best m value during random forest
+
+###boosting page 337 - 341
+system down
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
